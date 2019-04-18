@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <h1>Journey Chiropractic</h1>
-    <h2>Welcome to Journey Chiropractic Clinic!</h2>
+  <style>
+   .page {
+     background: linear-gradient(
+       90deg,
+       rgba(2,0,36,1) 0%,
+       rgba(9,9,121,1) 75%,
+       rgba(0,212,255,1) 100%
+     );
+     color: #eee;
+     font-family: sans-serif;
+   }
 
-    <h3>Hours</h3>
+   .time-list {
+     list-style-type: none;
+   }
 
-    <ul>
+   .time-list-item {
+
+   }
+
+   .title-heading {
+     text-align: center;
+   }
+
+   .subtitle-heading {
+     text-align: center;
+   }
+
+   .navigation-list {
+     list-style-type: none;
+     text-align: center;
+     padding: 0;
+   }
+
+   .navigation-list-item {
+     display: inline;
+   }
+  </style>
+
+  <body class="page">
+    <h1 class="title-heading">Journey Chiropractic</h1>
+    <h2 class="subtitle-heading">Welcome to Journey Chiropractic Clinic!</h2>
+    <section>
+      <ul class="navigation-list">
+        <li class="navigation-list-item"><a href="#hours">Hours</a></li>
+        <li class="navigation-list-item"><a href="#location">Location</a></li>
+        <li class="navigation-list-item"><a href="#contact">Contact</a></li>
+        <li class="navigation-list-item"><a href="#services">Services</a></li>
+        <li class="navigation-list-item"><a href="#practitioners">Practitioners</a></li>
+      </ul>
+    </section>
+
+    <h3 id="hours">Hours</h3>
+
+    <ul class="time-list">
       <li>Mondays 9am-6pm</li>
       <li>Tuesdays 9am-6pm</li>
       <li>Wednesdays 9am-6pm</li>
@@ -14,14 +62,14 @@
       <li>Fridays 9am-6pm</li>
     </ul>
 
-    <h3>Location</h3>
+    <h3 id="location">Location</h3>
 
     8835 SW Canyon Lane #302 Portland 97225
 
-    <h3>Contact</h3>
+    <h3 id="contact">Contact</h3>
     Call us to schedule today at 971-238-9464.
 
-    <h3>Services</h3>
+    <h3 id="services">Services</h3>
     <ul>
       <li>Chiropractic Adjustments</li>
       <li>Cupping</li>
@@ -30,10 +78,13 @@
       <li>Laser/ Low Level Light Therapy</li>
       <li>Electrical Stimulation (IFC, TENS, Russian Stim)</li>
       <li>Manual Therapy including with Vibracussor</li>
-      <li>Gentle Adjusting utilizing tools including Activator, Arthrostim, and Blocking</li>
+      <li>
+        Gentle Adjusting utilizing tools including Activator, Arthrostim, and
+        Blocking
+      </li>
     </ul>
 
-    <h3>Practitioners</h3>
+    <h3 id="practitioners">Practitioners</h3>
     <p>
       Dr. Cassandra Hoy incorporates a gentle approach to your treatment, pulling advanced
       trainings in intuitive adjustment techniques, Sacro-Occipital Technique,
