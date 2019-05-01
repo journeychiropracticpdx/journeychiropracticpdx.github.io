@@ -5,6 +5,20 @@
      --section-width: 30rem;
      --section-color: #9c7;
      --section-radius: 8px;
+     --shadow: 1em 1em 1em -0.5em;
+   }
+
+   .header {
+     background-color: var(--section-color);
+     border-bottom: 0.1em solid black;
+     color: var(--header-color);
+     margin: 0;
+     position: sticky;
+     top: 0;
+   }
+
+   .main {
+     padding: 1em;
    }
 
    .page {
@@ -15,6 +29,7 @@
      background-repeat: no-repeat;
      color: #121212;
      font-family: sans-serif;
+     margin: 0;
    }
 
    .time-list {
@@ -27,6 +42,7 @@
    }
 
    .title-heading {
+     margin: 0;
      text-align: center;
    }
 
@@ -68,6 +84,7 @@
    .hours {
      background-color: var(--section-color);
      border-radius: var(--section-radius);
+     box-shadow: var(--shadow);
      max-width: var(--section-width);
      padding: 1rem;
    }
@@ -75,6 +92,7 @@
    .location {
      background-color: var(--section-color);
      border-radius: var(--section-radius);
+     box-shadow: var(--shadow);
      max-width: var(--section-width);
      padding: 1rem;
    }
@@ -82,15 +100,20 @@
    .contact-information {
      background-color: var(--section-color);
      border-radius: var(--section-radius);
+     box-shadow: var(--shadow);
+     max-width: var(--section-width);
+     padding: 1rem;
+   }
+
+   .practitioner {
+     background-color: var(--section-color);
+     border-radius: var(--section-radius);
+     box-shadow: var(--shadow);
      max-width: var(--section-width);
      padding: 1rem;
    }
 
    .practitioner-description {
-     background-color: var(--section-color);
-     border-radius: var(--section-radius);
-     max-width: var(--section-width);
-     padding: 1rem;
    }
 
    .practitioner-photo {
@@ -99,12 +122,14 @@
       * added on the right side of the image. There's more research to do, but
       * this fits the timebox.
       */
-     max-width: calc(var(--section-width) + 2rem);
+     max-width: calc(var(--section-width) + 0rem);
+     border-radius: 1rem;
    }
 
    .services-list-container {
      background-color: var(--section-color);
      border-radius: var(--section-radius);
+     box-shadow: var(--shadow);
      max-width: var(--section-width);
      padding: 1rem;
    }
@@ -115,7 +140,7 @@
   </style>
 
   <body class="page">
-    <header>
+    <header class="header">
       <h1 class="title-heading">Journey Chiropractic</h1>
       <h2 class="subtitle-heading">Welcome to Journey Chiropractic Clinic!</h2>
       <nav>
@@ -138,70 +163,74 @@
         </ul>
       </nav>
     </header>
+    <main class="main">
+      <section>
+        <h3 id="hours">Hours</h3>
 
-    <section>
-      <h3 id="hours">Hours</h3>
+        <div class="hours">
+          <ul class="time-list">
+            <li>Mondays 8:30am-6pm</li>
+            <li>Tuesdays 8:30am-6pm</li>
+            <li>Wednesdays 8:30am-6pm</li>
+            <li>Thursdays 8:30am-6pm</li>
+            <li>Fridays 8:30am-6pm</li>
+          </ul>
+        </div>
+      </section>
 
-      <div class="hours">
-        <ul class="time-list">
-          <li>Mondays 8:30am-6pm</li>
-          <li>Tuesdays 8:30am-6pm</li>
-          <li>Wednesdays 8:30am-6pm</li>
-          <li>Thursdays 8:30am-6pm</li>
-          <li>Fridays 8:30am-6pm</li>
-        </ul>
-      </div>
-    </section>
+      <section>
+        <h3 id="location">Location</h3>
 
-    <section>
-      <h3 id="location">Location</h3>
+        <address class="location">
+          8835 SW Canyon Lane #302 Portland 97225
+        </address>
+      </section>
 
-      <div class="location">
-        8835 SW Canyon Lane #302 Portland 97225
-      </div>
-    </section>
+      <section>
+        <h3 id="contact">Contact</h3>
+        <div class="contact-information">
+          Call us to schedule today at
+          <a href="tel:971-238-9464">971-238-9464</a>.
+        </div>
+      </section>
 
-    <section>
-      <h3 id="contact">Contact</h3>
-      <div class="contact-information">
-        Call us to schedule today at 971-238-9464.
-      </div>
-    </section>
+      <section>
+        <h3 id="services">Services</h3>
+        <div class="services-list-container">
+          <ul class="services-list">
+            <li>Chiropractic Adjustments</li>
+            <li>Cupping</li>
+            <li>Gua sha</li>
+            <li>Therapeutic Ultrasound</li>
+            <li>Laser/ Low Level Light Therapy</li>
+            <li>Electrical Stimulation (IFC, TENS, Russian Stim)</li>
+            <li>Manual Therapy including with Vibracussor</li>
+            <li>
+              Gentle Adjusting utilizing tools including Activator, Arthrostim,
+              and Blocking
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <section>
-      <h3 id="services">Services</h3>
-      <div class="services-list-container">
-        <ul class="services-list">
-          <li>Chiropractic Adjustments</li>
-          <li>Cupping</li>
-          <li>Gua sha</li>
-          <li>Therapeutic Ultrasound</li>
-          <li>Laser/ Low Level Light Therapy</li>
-          <li>Electrical Stimulation (IFC, TENS, Russian Stim)</li>
-          <li>Manual Therapy including with Vibracussor</li>
-          <li>
-            Gentle Adjusting utilizing tools including Activator, Arthrostim, and
-            Blocking
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h3 id="practitioners">Practitioners</h3>
-      <h4>Dr. Hoy</h4>
-      <p class="practitioner-description">
-        Dr. Cassandra Hoy incorporates a gentle approach to your treatment,
-        pulling advanced trainings in intuitive adjustment techniques,
-        Sacro-Occipital Technique, Webster Technique, functional medicine and
-        nutrition, pediatrics and prenatal care. She is excited to work
-        collaboratively with your healthcare team to support conditions
-        including accidents and trauma, TMJ and headaches, pregnancy and
-        postpartum recovery, everyday aches and pains, as well as complex
-        conditions. In her free time Dr. Hoy enjoys playing in the garden and on
-        her bike as well as finding new uses for old things.
-      </p>
-      <img class="practitioner-photo" src="./choy-picture-1-cropped.jpg" />
-    </section>
+      <section>
+        <h3 id="practitioners">Practitioners</h3>
+        <section class="practitioner">
+          <h4>Dr. Hoy</h4>
+          <p class="practitioner-description">
+            Dr. Cassandra Hoy incorporates a gentle approach to your treatment,
+            pulling advanced trainings in intuitive adjustment techniques,
+            Sacro-Occipital Technique, Webster Technique, functional medicine and
+            nutrition, pediatrics and prenatal care. She is excited to work
+            collaboratively with your healthcare team to support conditions
+            including accidents and trauma, TMJ and headaches, pregnancy and
+            postpartum recovery, everyday aches and pains, as well as complex
+            conditions. In her free time Dr. Hoy enjoys playing in the garden and
+            on her bike as well as finding new uses for old things.
+          </p>
+          <img class="practitioner-photo" src="./choy-picture-1-cropped.jpg" />
+        </section>
+      </section>
+    </main>
   </body>
 </html>

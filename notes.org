@@ -1,0 +1,23 @@
+* notes
+** website
+*** Cassandra wants
+**** TODO logo [0/1]
+     + [ ] proofs, phase 1/3 [0/3]
+       + [ ] Cassandra wants to see a logo with an S shape from a spine, but as
+         a road.
+       + [ ] Use a map to represent a journey.
+       + [ ] Show a path.
+**** TODO colors [0/3]
+     + [ ] Cassandra wants white/black/purple.
+     + [ ] Use a theme to rapidly experiment with colors.
+     + [ ] Establish color palette for green.
+**** TODO header [0/3]
+     + [ ] Use an anchored header.
+     + [ ] Break header apart from content with semantic tags.
+**** TODO navigation [0/0]
+**** TODO icons [0/2]
+     + [ ] Make an icon out of the logo determined from [[logo]].
+     + [ ] Make icons for various services Cassandra performs.
+*** Cassandra needs
+**** TODO domain access
+**** TODO high res picture
