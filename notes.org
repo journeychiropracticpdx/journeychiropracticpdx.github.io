@@ -19,5 +19,6 @@
      + [ ] Make an icon out of the logo determined from [[logo]].
      + [ ] Make icons for various services Cassandra performs.
 *** Cassandra needs
-**** TODO domain access
+**** DONE domain access
+     CLOSED: [2019-05-01 Wed 21:14]
 **** TODO high res picture

@@ -1,9 +1,31 @@
 <!DOCTYPE html>
 <html>
   <style>
-   :root {
+   .green-theme {
+     --color1: #cafaba;
+     --color2: #9c7;
+     --color3: #340;
+     --color4: #530;
+     --color9: #121212;
+   }
+
+   .purple-theme {
+     --color1: #97c;
+     --color2: #cabafa;
+     --color3: #304;
+     --color4: #530;
+     --color9: #121212;
+   }
+
+   body {
+     --background-color: var(--color1);
+     --link-color: var(--color3)
+     --link-active-color: var(--color4);
+     --link-hover-color: var(--color2);
+     --link-visited-color: var(--color4);
+     --text-color: var(--color9);
      --section-width: 30rem;
-     --section-color: #9c7;
+     --section-color: var(--color2);
      --section-radius: 8px;
      --shadow: 1em 1em 1em -0.5em;
    }
@@ -12,9 +34,18 @@
      background-color: var(--section-color);
      border-bottom: 0.1em solid black;
      color: var(--header-color);
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
      margin: 0;
      position: sticky;
      top: 0;
+   }
+
+   .header-contact {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
    }
 
    .main {
@@ -23,11 +54,11 @@
 
    .page {
      background-attachment: fixed;
-     background-color: #cafaba;
+     background-color: var(--background-color);
      background-image: url("journey-tree-logo-01.svg");
      background-position: right bottom;
      background-repeat: no-repeat;
-     color: #121212;
+     color: var(--text-color);
      font-family: sans-serif;
      margin: 0;
    }
@@ -61,20 +92,20 @@
    }
 
    .navigation-link:link {
-     color: #340;
+     color: var(--link-color);
    }
 
    .navigation-link:visited {
-     color: #530;
+     color: var(--link-visited-color);
    }
 
    .navigation-link:hover {
-     background-color: #9c9;
+     background-color: var(--link-hover-color);
      border-radius: 4px;
    }
 
    .navigation-link:active {
-     color: #530;
+     color: var(--link-active-color);
    }
 
    .navigation-list-item {
@@ -139,11 +170,24 @@
    }
   </style>
 
-  <body class="page">
+  <script>
+   function useTheme(theme) {
+     document.body.classList.remove('green-theme')
+     document.body.classList.remove('purple-theme')
+     document.body.classList.add(theme + '-theme')
+   }
+  </script>
+
+  <body class="page green-theme">
     <header class="header">
       <h1 class="title-heading">Journey Chiropractic</h1>
-      <h2 class="subtitle-heading">Welcome to Journey Chiropractic Clinic!</h2>
-      <nav>
+      <div class="header-contact">
+        <address>
+          8835 SW Canyon Lane #302 Portland 97225
+        </address>
+        <a href="tel:971-238-9464">971-238-9464</a>
+      </div>
+      <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-list-item">
             <a class="navigation-link" href="#hours">Hours</a>
@@ -162,6 +206,8 @@
           </li>
         </ul>
       </nav>
+      <button onclick="useTheme('green')">green</button>
+      <button onclick="useTheme('purple')">purple</button>
     </header>
     <main class="main">
       <section>
