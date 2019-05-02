@@ -1,0 +1,224 @@
+/**
+ * Themes have 6 total colors. The colors shown have the general purposes:
+ * + 1: dominant background color
+ * + 2: dominant foreground color
+ * + 3: accent background color 1
+ * + 4: accent foreground color 1
+ * + 5: accent background color 2
+ * + 6: accent foreground color 2
+ */
+
+.green-theme {
+  --dbc: #cafaba;
+  --dfc: #121212;
+  --abc1: #9c7;
+  --afc1: #340;
+  --abc2: #530;
+  --afc2: #d85;
+}
+
+.purple-theme {
+  --dbc: #97c;
+  --dfc: #121212;
+  --abc1: #cabafa;
+  --afc1: #304;
+  --abc2: #ec7;
+  --afc2: #530;
+}
+
+.purple2-theme {
+  --dbc: #cabafa;
+  --dfc: #121212;
+  --abc1: #75a;
+  --afc1: #fff;
+  --abc2: #643;
+  --afc2: #fcb;
+}
+
+body {
+  --background-color: var(--dbc);
+  --header-color: var(--afc2);
+  --header-background-color: var(--abc2);
+  --link-color: var(--afc2);
+  --link-active-color: var(--afc2);
+  --link-hover-background-color: var(--abc2);
+  --link-hover-color: var(--afc2);
+  --link-visited-color: var(--afc2);
+  --text-color: var(--dfc);
+  --section-width: 30rem;
+  --section-background-color: var(--abc1);
+  --section-color: var(--afc1);
+  --section-radius: 0 0 8px 8px;
+  --shadow: 1em 1em 1em -0.5em;
+}
+
+.header {
+  align-items: center;
+  background-color: var(--section-background-color);
+  color: var(--section-color);
+  border-bottom: 0.1em solid var(--dfc);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0;
+  position: sticky;
+  top: 0;
+}
+
+.header-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main {
+  padding: 1em;
+}
+
+.page {
+  background-attachment: fixed;
+  background-color: var(--background-color);
+  background-image: url("journey-tree-logo-01.svg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  color: var(--text-color);
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.time-list {
+  list-style-type: none;
+  margin: 0;
+}
+
+.time-list-item {
+
+}
+
+.title-heading {
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+.subtitle-heading {
+  text-align: center;
+}
+
+.navigation-list {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+.navigation-link {
+  padding: 0.25rem;
+}
+
+.navigation-link:link {
+  color: var(--link-color);
+}
+
+.navigation-link:visited {
+  color: var(--link-visited-color);
+}
+
+.navigation-link:hover {
+  background-color: var(--link-hover-background-color);
+  color: var(--link-hover-color);
+  border-radius: 4px;
+}
+
+.navigation-link:active {
+  color: var(--link-active-color);
+}
+
+.phone-link:link {
+  color: var(--link-color);
+}
+
+.phone-link:visited {
+  color: var(--link-visted-color);
+}
+
+.phone-link:hover {
+  background-color: var(--link-hover-background-color);
+  color: var(--link-hover-color);
+}
+
+.navigation-list-item {
+  display: inline;
+}
+
+.section-heading {
+  color: var(--header-color);
+  background-color: var(--header-background-color);
+  font-size: 1rem;
+  margin-bottom: 0;
+  border-radius: 8px 8px 0 0;
+  max-width: var(--section-width);
+  padding: 1rem 0 0.5rem 2rem;
+}
+
+.section {
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  max-width: var(--section-width);
+}
+
+.hours {
+  background-color: var(--section-background-color);
+  border-radius: var(--section-radius);
+  color: var(--section-color);
+  max-width: var(--section-width);
+  padding: 1rem;
+}
+
+.location {
+  background-color: var(--section-background-color);
+  border-radius: var(--section-radius);
+  color: var(--section-color);
+  max-width: var(--section-width);
+  padding: 1rem;
+}
+
+.contact-information {
+  background-color: var(--section-background-color);
+  border-radius: var(--section-radius);
+  color: var(--section-color);
+  max-width: var(--section-width);
+  padding: 1rem;
+}
+
+.practitioner {
+  background-color: var(--section-background-color);
+  border-radius: var(--section-radius);
+  color: var(--section-color);
+  max-width: var(--section-width);
+  padding: 1rem;
+}
+
+.practitioner-description {
+}
+
+.practitioner-photo {
+  /**
+   * I can't figure out why there seems to be an arbitrary 2 rem of padding
+   * added on the right side of the image. There's more research to do, but
+   * this fits the timebox.
+   */
+  max-width: calc(var(--section-width) - 2rem);
+  border-radius: 1rem;
+}
+
+.services-list-container {
+  background-color: var(--section-background-color);
+  border-radius: var(--section-radius);
+  color: var(--section-color);
+  max-width: var(--section-width);
+  padding: 1rem;
+}
+
+.services-list {
+  margin: 0;
+}

@@ -1,179 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <style>
-   .green-theme {
-     --color1: #cafaba;
-     --color2: #9c7;
-     --color3: #340;
-     --color4: #530;
-     --color9: #121212;
-   }
-
-   .purple-theme {
-     --color1: #97c;
-     --color2: #cabafa;
-     --color3: #304;
-     --color4: #530;
-     --color9: #121212;
-   }
-
-   body {
-     --background-color: var(--color1);
-     --link-color: var(--color3)
-     --link-active-color: var(--color4);
-     --link-hover-color: var(--color2);
-     --link-visited-color: var(--color4);
-     --text-color: var(--color9);
-     --section-width: 30rem;
-     --section-color: var(--color2);
-     --section-radius: 8px;
-     --shadow: 1em 1em 1em -0.5em;
-   }
-
-   .header {
-     background-color: var(--section-color);
-     border-bottom: 0.1em solid black;
-     color: var(--header-color);
-     display: flex;
-     flex-direction: row;
-     justify-content: space-evenly;
-     margin: 0;
-     position: sticky;
-     top: 0;
-   }
-
-   .header-contact {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-   }
-
-   .main {
-     padding: 1em;
-   }
-
-   .page {
-     background-attachment: fixed;
-     background-color: var(--background-color);
-     background-image: url("journey-tree-logo-01.svg");
-     background-position: right bottom;
-     background-repeat: no-repeat;
-     color: var(--text-color);
-     font-family: sans-serif;
-     margin: 0;
-   }
-
-   .time-list {
-     list-style-type: none;
-     margin: 0;
-   }
-
-   .time-list-item {
-
-   }
-
-   .title-heading {
-     margin: 0;
-     text-align: center;
-   }
-
-   .subtitle-heading {
-     text-align: center;
-   }
-
-   .navigation-list {
-     list-style-type: none;
-     text-align: center;
-     padding: 0;
-   }
-
-   .navigation-link {
-     padding: 0.25rem;
-   }
-
-   .navigation-link:link {
-     color: var(--link-color);
-   }
-
-   .navigation-link:visited {
-     color: var(--link-visited-color);
-   }
-
-   .navigation-link:hover {
-     background-color: var(--link-hover-color);
-     border-radius: 4px;
-   }
-
-   .navigation-link:active {
-     color: var(--link-active-color);
-   }
-
-   .navigation-list-item {
-     display: inline;
-   }
-
-   .hours {
-     background-color: var(--section-color);
-     border-radius: var(--section-radius);
-     box-shadow: var(--shadow);
-     max-width: var(--section-width);
-     padding: 1rem;
-   }
-
-   .location {
-     background-color: var(--section-color);
-     border-radius: var(--section-radius);
-     box-shadow: var(--shadow);
-     max-width: var(--section-width);
-     padding: 1rem;
-   }
-
-   .contact-information {
-     background-color: var(--section-color);
-     border-radius: var(--section-radius);
-     box-shadow: var(--shadow);
-     max-width: var(--section-width);
-     padding: 1rem;
-   }
-
-   .practitioner {
-     background-color: var(--section-color);
-     border-radius: var(--section-radius);
-     box-shadow: var(--shadow);
-     max-width: var(--section-width);
-     padding: 1rem;
-   }
-
-   .practitioner-description {
-   }
-
-   .practitioner-photo {
-     /**
-      * I can't figure out why there seems to be an arbitrary 2 rem of padding
-      * added on the right side of the image. There's more research to do, but
-      * this fits the timebox.
-      */
-     max-width: calc(var(--section-width) + 0rem);
-     border-radius: 1rem;
-   }
-
-   .services-list-container {
-     background-color: var(--section-color);
-     border-radius: var(--section-radius);
-     box-shadow: var(--shadow);
-     max-width: var(--section-width);
-     padding: 1rem;
-   }
-
-   .services-list {
-     margin: 0;
-   }
-  </style>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
   <script>
    function useTheme(theme) {
      document.body.classList.remove('green-theme')
      document.body.classList.remove('purple-theme')
+     document.body.classList.remove('purple2-theme')
      document.body.classList.add(theme + '-theme')
    }
   </script>
@@ -185,7 +20,7 @@
         <address>
           8835 SW Canyon Lane #302 Portland 97225
         </address>
-        <a href="tel:971-238-9464">971-238-9464</a>
+        <a class="phone-link" href="tel:971-238-9464">971-238-9464</a>
       </div>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -208,10 +43,11 @@
       </nav>
       <button onclick="useTheme('green')">green</button>
       <button onclick="useTheme('purple')">purple</button>
+      <button onclick="useTheme('purple2')">purple2</button>
     </header>
     <main class="main">
-      <section>
-        <h3 id="hours">Hours</h3>
+      <section class="section">
+        <h2 class="section-heading" id="hours">Hours</h2>
 
         <div class="hours">
           <ul class="time-list">
@@ -224,24 +60,24 @@
         </div>
       </section>
 
-      <section>
-        <h3 id="location">Location</h3>
+      <section class="section">
+        <h2 class="section-heading" id="location">Location</h2>
 
         <address class="location">
           8835 SW Canyon Lane #302 Portland 97225
         </address>
       </section>
 
-      <section>
-        <h3 id="contact">Contact</h3>
+      <section class="section">
+        <h2 class="section-heading" id="contact">Contact</h2>
         <div class="contact-information">
           Call us to schedule today at
-          <a href="tel:971-238-9464">971-238-9464</a>.
+          <a class="phone-link" href="tel:971-238-9464">971-238-9464</a>.
         </div>
       </section>
 
-      <section>
-        <h3 id="services">Services</h3>
+      <section class="section">
+        <h2 class="section-heading" id="services">Services</h2>
         <div class="services-list-container">
           <ul class="services-list">
             <li>Chiropractic Adjustments</li>
@@ -259,8 +95,8 @@
         </div>
       </section>
 
-      <section>
-        <h3 id="practitioners">Practitioners</h3>
+      <section class="section">
+        <h2 class="section-heading" id="practitioners">Practitioners</h2>
         <section class="practitioner">
           <h4>Dr. Hoy</h4>
           <p class="practitioner-description">
