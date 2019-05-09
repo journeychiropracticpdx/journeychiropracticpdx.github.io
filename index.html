@@ -11,9 +11,27 @@
      document.body.classList.remove('purple2-theme')
      document.body.classList.add(theme + '-theme')
    }
+
+   function showThemeSwitcher() {
+     document.querySelector('.theme-switcher').classList.remove('hidden')
+   }
+
+   function showService(service) {
+     document.querySelectorAll('.service-description').forEach(e => {
+       e.classList.add('remove')
+     })
+     document.querySelector('.service-' + service).classList.remove('remove')
+   }
+
+   window.onkeyup = (e) => {
+     if(e.key.toUpperCase() == 'T') {
+       showThemeSwitcher()
+     }
+   }
+
   </script>
 
-  <body class="page green-theme">
+  <body class="page purple2-theme">
     <header class="header">
       <h1 class="title-heading">Journey Chiropractic</h1>
       <div class="header-contact">
@@ -44,9 +62,11 @@
           </li>
         </ul>
       </nav>
-      <button onclick="useTheme('green')">green</button>
-      <button onclick="useTheme('purple')">purple</button>
-      <button onclick="useTheme('purple2')">purple2</button>
+      <div class="theme-switcher hidden">
+        <button onclick="useTheme('green')">green</button>
+        <button onclick="useTheme('purple')">purple</button>
+        <button onclick="useTheme('purple2')">purple2</button>
+      </div>
     </header>
     <main class="main">
       <section class="section">
@@ -79,6 +99,39 @@
               and Blocking
             </li>
           </ul>
+          <div class="service-description-container">
+            <div class="services-heading">
+              <button class="service-button" onclick="showService('chiropractic')">
+                Chiropractic
+              </button>
+              <button class="service-button" onclick="showService('manual-therapy')">
+                Manual Therapy
+              </button>
+              <button class="service-button" onclick="showService('physical-therapy')">
+                Physical Therapy
+              </button>
+              <button class="service-button" onclick="showService('yoga-instructor')">
+                Yoga Instruction
+              </button>
+            </div>
+            <div class="service-description service-chiropractic remove">
+              Gentle adjusting utilizing tools including Activator, Arthrostim,
+              and Blocking.
+            </div>
+            <div class="service-description service-manual-therapy remove">
+              Manual therapy utilizing tools including Vibracussor, Cupping, Gua
+              she, Therapeutic Ultrasound, Electrical Stimulation (IFC, TENS,
+              Russian Stim), and Laser/Low Level Light Therapy.
+            </div>
+            <div class="service-description service-physical-therapy remove">
+              Journey Chiropractic works alongside
+              <a href="http://journeytohealthpt.com/">
+                Journey To Health Physical Therapy</a>.
+            </div>
+            <div class="service-description service-yoga-instructor remove">
+              Coming soon!
+            </div>
+          </div>
         </div>
       </section>
 

@@ -15,9 +15,30 @@
      + [ ] Use an anchored header.
      + [ ] Break header apart from content with semantic tags.
 **** TODO navigation [0/0]
-**** TODO icons [0/2]
+**** TODO icons [0/3]
      + [ ] Make an icon out of the logo determined from [[logo]].
      + [ ] Make icons for various services Cassandra performs.
+
+     From Cassandra:
+
+     on my website, under services, I want to change it to big buttons and only
+     listing the following:  Chiropractic, Manual Therapy, Physical Therapy, and
+     Yoga Instruction
+
+     I want the chiropractic heading to then have a link that describes it as
+     “Gentle adjusting utilizing tools including Activator, Arthrostim, and
+     Blocking”
+
+     for Manual Therapy, I want that to have a link to a description “Manual
+     therapy utilizing tools including Vibracussor, Cupping, Gua she,
+     Therapeutic Ultrasound, Electrical Stimulation (IFC, TENS, Russian Stim),
+     and Laser/Low Level Light Therapy).”
+
+     For physical therapy I want to link to Angela’s page.
+
+     And for Yoga, I will have a link to our yoga instructor
+**** TODO map
+     Make the address something visible.
 *** Cassandra needs
 **** DONE domain access
      CLOSED: [2019-05-01 Wed 21:14]

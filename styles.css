@@ -50,6 +50,8 @@ body {
   --section-color: var(--afc1);
   --section-radius: 0 0 8px 8px;
   --shadow: 1em 1em 1em -0.5em;
+  --button-shadow: 0.25em 0.25em 0.25em 0.1em var(--abc1);
+  --services-heading-height: 3rem;
 }
 
 .header {
@@ -93,6 +95,22 @@ body {
 
 .time-list-item {
 
+}
+
+.theme-switcher {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.remove {
+  display: none;
 }
 
 .title-heading {
@@ -220,5 +238,27 @@ body {
 }
 
 .services-list {
+  display: none;
   margin: 0;
+}
+
+.services-heading {
+  align-items: center;
+  display: flex;
+  height: var(--services-heading-height);
+  justify-content: space-evenly;
+}
+
+.service-button {
+  background-color: var(--afc1);
+  border-radius: 1rem;
+  box-shadow: var(--button-shadow);
+  color: var(--abc1);
+}
+
+.service-description-container {
+  background-color: var(--afc1);
+  border-radius: 1rem;
+  color: var(--abc1);
+  padding: 0 1rem 1rem 1rem;
 }
