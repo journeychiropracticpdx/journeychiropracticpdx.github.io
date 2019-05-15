@@ -21,6 +21,14 @@
        e.classList.add('remove')
      })
      document.querySelector('.service-' + service).classList.remove('remove')
+
+     document.querySelectorAll('.selected-service-button').forEach(e => {
+       e.classList.remove('selected-service-button')
+       e.classList.add('service-button')
+     })
+     const button = document.querySelector('[data-service="' + service + '"]')
+     button.classList.remove('service-button')
+     button.classList.add('selected-service-button')
    }
 
    window.onkeyup = (e) => {
@@ -31,7 +39,7 @@
 
   </script>
 
-  <body class="page purple2-theme">
+  <body class="page purple2-theme" onload="showService('chiropractic')">
     <header class="header">
       <h1 class="title-heading">Journey Chiropractic</h1>
       <div class="header-contact">
@@ -101,16 +109,32 @@
           </ul>
           <div class="service-description-container">
             <div class="services-heading">
-              <button class="service-button" onclick="showService('chiropractic')">
+              <button
+                class="service-button"
+                data-service="chiropractic"
+                onclick="showService('chiropractic')"
+              >
                 Chiropractic
               </button>
-              <button class="service-button" onclick="showService('manual-therapy')">
+              <button
+                class="service-button"
+                data-service="manual-therapy"
+                onclick="showService('manual-therapy')"
+              >
                 Manual Therapy
               </button>
-              <button class="service-button" onclick="showService('physical-therapy')">
+              <button
+                class="service-button"
+                data-service="physical-therapy"
+                onclick="showService('physical-therapy')"
+              >
                 Physical Therapy
               </button>
-              <button class="service-button" onclick="showService('yoga-instructor')">
+              <button
+                class="service-button"
+                data-service="yoga-instructor"
+                onclick="showService('yoga-instructor')"
+              >
                 Yoga Instruction
               </button>
             </div>

@@ -256,6 +256,13 @@ body {
   color: var(--abc1);
 }
 
+.selected-service-button {
+  background-color: var(--abc1);
+  border-radius: 1rem;
+  box-shadow: var(--button-shadow);
+  color: var(--afc1);
+}
+
 .service-description-container {
   background-color: var(--afc1);
   border-radius: 1rem;
