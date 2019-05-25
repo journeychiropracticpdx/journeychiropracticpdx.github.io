@@ -153,6 +153,7 @@ body {
 
 .phone-link:link {
   color: var(--link-color);
+  text-decoration: none;
 }
 
 .phone-link:visited {
@@ -162,6 +163,10 @@ body {
 .phone-link:hover {
   background-color: var(--link-hover-background-color);
   color: var(--link-hover-color);
+}
+
+.phone-link-number {
+  text-decoration: underline;
 }
 
 .navigation-list-item {
