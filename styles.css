@@ -184,6 +184,14 @@ body {
   max-width: var(--section-width);
 }
 
+.section-location {
+  background-color: var(--section-background-color);
+  border-radius: var(--section-radius);
+  color: var(--section-color);
+  max-width: var(--section-width);
+  padding: 1rem;
+}
+
 .hours {
   background-color: var(--section-background-color);
   border-radius: var(--section-radius);
