@@ -13,10 +13,17 @@
      + [X] Cassandra wants white/black/purple.
      + [X] Use a theme to rapidly experiment with colors.
      + [X] Establish color palette for green.
-**** TODO header [0/3]
-     + [ ] Use an anchored header.
-     + [ ] Break header apart from content with semantic tags.
-**** TODO navigation [0/0]
+**** DONE header [2/2]
+     CLOSED: [2019-05-25 Sat 11:53]
+     + [X] Use an anchored header.
+     + [X] Break header apart from content with semantic tags.
+**** DONE navigation [0/0]
+     CLOSED: [2019-05-25 Sat 11:53]
+**** DONE map
+     CLOSED: [2019-05-14 Tue 22:07]
+     Make the address something visible.
+**** TODO add logo
+     It's in my email.
 **** TODO icons [0/3]
      + [ ] Make an icon out of the logo determined from [[logo]].
      + [ ] Make icons for various services Cassandra performs.
@@ -39,14 +46,14 @@
      For physical therapy I want to link to Angela’s page.
 
      And for Yoga, I will have a link to our yoga instructor
-**** DONE map
-     CLOSED: [2019-05-14 Tue 22:07]
-     Make the address something visible.
-**** TODO add logo
-     It's in my email.
 **** TODO breakpoints
      Mostly the site is sized for mobile but it needs some desktop breakpoints
      as well.
+**** TODO hours
+     Use a kind of tabular or grid formatting.
+**** TODO animated leaves
+**** TODO better color scheme
+     purple/brown ain't so great - at least with what I've picked.
 *** Cassandra needs
 **** DONE domain access
      CLOSED: [2019-05-01 Wed 21:14]
