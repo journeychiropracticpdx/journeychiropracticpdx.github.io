@@ -37,9 +37,16 @@
      }
    }
 
+   function onload() {
+     showService('chiropractic')
+     animateLeaves()
+   }
+
   </script>
 
-  <body class="page purple2-theme" onload="showService('chiropractic')">
+  <script src="leaves.js"></script>
+
+  <body class="page purple2-theme" onload="onload()">
     <header class="header">
       <h1 class="title-heading">Journey Chiropractic</h1>
       <div class="header-contact">
@@ -77,6 +84,8 @@
         <button onclick="useTheme('purple2')">purple2</button>
       </div>
     </header>
+    <canvas class="canvas" id="canvas">
+    </canvas>
     <main class="main">
       <section class="section">
         <h2 class="section-heading" id="hours">Hours</h2>
