@@ -256,29 +256,45 @@ body {
 }
 
 .services-heading {
-  align-items: center;
   display: flex;
-  height: var(--services-heading-height);
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding-top: 1rem;
 }
 
 .service-button {
   background-color: var(--afc1);
-  border-radius: 1rem;
-  box-shadow: var(--button-shadow);
+  border-style: none;
+  border-radius: 1rem 1rem 0 0;
   color: var(--abc1);
+  padding: 0.4rem;
+  height: 3rem;
 }
 
 .selected-service-button {
   background-color: var(--abc1);
-  border-radius: 1rem;
-  box-shadow: var(--button-shadow);
+  border: solid var(--afc1) 0.1rem;
+  border-bottom: none;
+  border-radius: 1rem 1rem 0 0;
   color: var(--afc1);
+  padding: 0.4rem;
+  height: 3rem;
+}
+
+.service-button-splitter {
+  border-bottom: solid var(--afc1) 0.1rem;
+  width: 1.5rem;
 }
 
 .service-description-container {
-  background-color: var(--afc1);
-  border-radius: 1rem;
-  color: var(--abc1);
-  padding: 0 1rem 1rem 1rem;
+}
+
+.service-description {
+  background-color: var(--section-background-color);
+  color: var(--section-color);
+  padding: 1rem;
+  border-radius: 0 0 1rem 1rem;
+  border-color: var(--afc1);
+  border-width: 0.1rem;
+  border-style: solid;
+  border-top: none;
 }
