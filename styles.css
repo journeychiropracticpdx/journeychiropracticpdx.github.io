@@ -68,9 +68,9 @@ body {
 }
 
 .header-contact {
+  align-items: center;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
 }
 
 .canvas {
@@ -210,6 +210,15 @@ body {
   color: var(--section-color);
   max-width: var(--section-width);
   padding: 1rem;
+}
+
+.language-list {
+  list-style-type: none;
+  margin: 0 0 0 1rem;
+  padding: 0;
+}
+
+.language-list-item {
 }
 
 .location {
