@@ -54,6 +54,48 @@ body {
   --services-heading-height: 3rem;
 }
 
+.availability {
+  width: 100%;
+}
+
+/**
+ * There is an effect here for making leader dots. To achieve it, the parent
+ * needs a combination of settings as well as settings given to the inner text
+ * (wrapped in a span in this case) and an :after pseudo element using content.
+ *
+ * See:
+ * https://www.w3.org/Style/Examples/007/leaders.en.html
+ * https://stackoverflow.com/questions/3032856/is-it-possible-to-set-the-stacking-order-of-pseudo-elements-below-their-parent-e
+ */
+.day-of-week-cell {
+  background-color: var(--section-background-color);
+  position: relative;
+  overflow-x: hidden;
+  z-index: 1;
+  max-width: 40em;
+}
+
+.day-of-week-cell:after {
+  float: left;
+  content:
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+  ;
+  position: absolute;
+  white-space: nowrap;
+  width: 0;
+  z-index: -1;
+}
+
+/**
+ * This span may not be needed after all, but I can clean this up another day.
+ */
+.day-of-week-name {
+
+}
+
 .header {
   align-items: center;
   background-color: var(--section-background-color);
@@ -93,15 +135,6 @@ body {
   color: var(--text-color);
   font-family: sans-serif;
   margin: 0;
-}
-
-.time-list {
-  list-style-type: none;
-  margin: 0;
-}
-
-.time-list-item {
-
 }
 
 .theme-switcher {
