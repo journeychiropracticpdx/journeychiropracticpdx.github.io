@@ -15,6 +15,7 @@
   --afc1: #340;
   --abc2: #530;
   --afc2: #d85;
+  --tree: url('journey-tree-logo-01.svg');
 }
 
 .purple-theme {
@@ -24,6 +25,7 @@
   --afc1: #304;
   --abc2: #ec7;
   --afc2: #530;
+  --tree: url('journey-tree-logo-01.svg');
 }
 
 .purple2-theme {
@@ -33,6 +35,17 @@
   --afc1: #fff;
   --abc2: #643;
   --afc2: #fcb;
+  --tree: url('journey-tree-logo-01.svg');
+}
+
+.purple3-theme {
+  --dbc: #fff;
+  --dfc: #121212;
+  --abc1: #649;
+  --afc1: #fff;
+  --abc2: #599;
+  --afc2: #fff;
+  --tree: url('journey-tree-logo-purple-01.svg');
 }
 
 body {
@@ -69,24 +82,24 @@ body {
  */
 .day-of-week-cell {
   background-color: var(--section-background-color);
-  position: relative;
+  /* position: relative; */
   overflow-x: hidden;
-  z-index: 1;
+  /* z-index: 1; */
   max-width: 40em;
 }
 
 .day-of-week-cell:after {
-  float: left;
-  content:
-    ". . . . . . . . . . . . . . . . . . . . "
-    ". . . . . . . . . . . . . . . . . . . . "
-    ". . . . . . . . . . . . . . . . . . . . "
-    ". . . . . . . . . . . . . . . . . . . . "
-  ;
-  position: absolute;
-  white-space: nowrap;
-  width: 0;
-  z-index: -1;
+  /* float: left; */
+  /* content: */
+  /*   ". . . . . . . . . . . . . . . . . . . . " */
+  /*   ". . . . . . . . . . . . . . . . . . . . " */
+  /*   ". . . . . . . . . . . . . . . . . . . . " */
+  /*   ". . . . . . . . . . . . . . . . . . . . " */
+  /* ; */
+  /* position: absolute; */
+  /* white-space: nowrap; */
+  /* width: 0; */
+  /* z-index: -1; */
 }
 
 /**
@@ -94,6 +107,32 @@ body {
  */
 .day-of-week-name {
 
+}
+
+.forms {
+  background-color: var(--section-background-color);
+  border-radius: var(--section-radius);
+  color: var(--section-color);
+  max-width: var(--section-width);
+  padding: 1rem;
+}
+
+.form-link {
+  padding: 0.25rem;
+}
+
+.form-link:link {
+  color: var(--link-color);
+}
+
+.form-link:visited {
+  color: var(--link-visited-color);
+}
+
+.form-link:hover {
+  background-color: var(--link-hover-background-color);
+  color: var(--link-hover-color);
+  border-radius: 4px;
 }
 
 .header {
@@ -129,7 +168,7 @@ body {
 .page {
   background-attachment: fixed;
   background-color: var(--background-color);
-  background-image: url("journey-tree-logo-01.svg");
+  background-image: var(--tree);
   background-position: right bottom;
   background-repeat: no-repeat;
   color: var(--text-color);
@@ -346,4 +385,16 @@ body {
   border-width: 0.1rem;
   border-style: solid;
   border-top: none;
+}
+
+.support {
+  background-color: var(--section-background-color);
+  border-radius: var(--section-radius);
+  color: var(--section-color);
+  max-width: var(--section-width);
+  padding: 1rem;
+}
+
+.support-logo {
+  width: 20rem;
 }

@@ -9,6 +9,7 @@
      document.body.classList.remove('green-theme')
      document.body.classList.remove('purple-theme')
      document.body.classList.remove('purple2-theme')
+     document.body.classList.remove('purple3-theme')
      document.body.classList.add(theme + '-theme')
    }
 
@@ -46,7 +47,7 @@
 
   <script src="leaves.js"></script>
 
-  <body class="page purple2-theme" onload="onload()">
+  <body class="page purple3-theme" onload="onload()">
     <header class="header">
       <h1 class="title-heading">Journey Chiropractic</h1>
       <div class="header-contact">
@@ -80,12 +81,21 @@
               Schedule an Appointment
             </a>
           </li>
+          <li class="navigation-list-item">
+            <a class="navigation-link" href="#forms">Forms</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-link" href="#support">
+              Support
+            </a>
+          </li>
         </ul>
       </nav>
       <div class="theme-switcher hidden">
         <button onclick="useTheme('green')">green</button>
         <button onclick="useTheme('purple')">purple</button>
         <button onclick="useTheme('purple2')">purple2</button>
+        <button onclick="useTheme('purple3')">purple3</button>
       </div>
     </header>
     <canvas class="canvas" id="canvas">
@@ -125,6 +135,18 @@
                 <span class="day-of-week-name">Fridays</span>
               </td>
               <td>8:30am-6pm</td>
+            </tr>
+            <tr>
+              <td class="day-of-week-cell">
+                <span class="day-of-week-name">Saturdays</span>
+              </td>
+              <td>By appointment</td>
+            </tr>
+            <tr>
+              <td class="day-of-week-cell">
+                <span class="day-of-week-name">Sundays</span>
+              </td>
+              <td>By appointment</td>
             </tr>
           </table>
         </div>
@@ -250,6 +272,30 @@
       <section class="section">
         <h2 class="section-heading" id="schedule">Schedule an Appointment</h2>
         <iframe width="100%" height="500" src="https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=8e8388506d254e21e4a0a9be693c4ce31ff817fa50af43058b09282d8320c489405c8176170639bdc08cedb752580b5ddebf17855dc5f624" style="overflow:hidden;" frameborder="0"></iframe>
+      </section>
+      <section class="section">
+        <h2 class="section-heading" id="forms">Forms</h2>
+        <section class="forms">
+          <p>
+            <a
+              class="form-link"
+              href="chiropractic-patient-intake-form-cassandra-hoy-01.pdf"
+            >
+              Patient intake form (PDF)
+            </a>
+          </p>
+        </section>
+      </section>
+      <section class="section">
+        <h2 class="section-heading" id="support">Support</h2>
+        <section class="support">
+          <p>
+            Journey Chiropractic is a member of JASO (Japan-America Society of
+            Oregon) and OAME (Oregon Association of Minority Entreprenuers).
+          </p>
+          <img class="support-logo" src="jaso-01.jpg">
+          <img class="support-logo" src="oame-01.jpg">
+        </section>
       </section>
     </main>
   </body>

@@ -49,14 +49,19 @@
 **** TODO breakpoints
      Mostly the site is sized for mobile but it needs some desktop breakpoints
      as well.
-**** TODO hours
+**** DONE hours
+     CLOSED: [2019-07-09 Tue 21:49]
      Use a kind of tabular or grid formatting.
 **** TODO animated leaves
-**** TODO better color scheme
+**** DONE better color scheme
+     CLOSED: [2019-07-09 Tue 22:39]
      purple/brown ain't so great - at least with what I've picked.
-**** TODO add patient intake form
-     + [ ] add forms section
-     + [ ] link patient intake form
+**** DONE add patient intake form
+     CLOSED: [2019-07-09 Tue 22:45]
+     + [X] add forms section
+     + [X] link patient intake form
+**** TODO add pictures of office
+     These will be in my email inbox.
 *** Cassandra needs
 **** DONE domain access
      CLOSED: [2019-05-01 Wed 21:14]
