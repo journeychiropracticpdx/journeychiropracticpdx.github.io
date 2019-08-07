@@ -181,11 +181,10 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  visibility: visible;
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 
 .remove {
