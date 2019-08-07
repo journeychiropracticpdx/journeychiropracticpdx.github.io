@@ -109,6 +109,11 @@ body {
 
 }
 
+.directions-help {
+  padding-top: 1rem;
+  text-align: center;
+}
+
 .forms {
   background-color: var(--section-background-color);
   border-radius: var(--section-radius);

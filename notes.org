@@ -25,6 +25,9 @@
 **** TODO add logo
      It's in my email.
 **** TODO icons [0/3]
+
+     I am waiting on svg icons. I cannot open Illustrator files.
+
      + [ ] Make an icon out of the logo determined from [[logo]].
      + [ ] Make icons for various services Cassandra performs.
 
@@ -60,8 +63,71 @@
      CLOSED: [2019-07-09 Tue 22:45]
      + [X] add forms section
      + [X] link patient intake form
-**** TODO add pictures of office
-     These will be in my email inbox.
+**** DONE add pictures of office
+     CLOSED: [2019-08-06 Tue 22:25]
+     +These will be in my email inbox.+
+
+     I have saved these to the repo as =IMG_####.jpg=. They need to be renamed
+     and checked in as well as added to the page.
+**** TODO fix sticky header
+     Safari requires a vendor prefix to make =position: sticky= work.
+**** TODO like us on Facebook
+     https://www.facebook.com/journeychiropracticpdx/
+**** TODO add Google business listing
+     https://goo.gl/maps/c6LQgJHim7tf3pUs6
+**** TODO find stock photo of road or make one
+
+    #+begin_quote
+    I was thinking of having a picture of a road such as the one attached
+    as a slightly transparent background, and then over it say (or open to
+    suggestions if you hate this):
+    " The Journey of a thousand miles begins with a single step"  ... Take
+    that step with us.  At Journey Chiropractic we cater each treatment to the
+    unique and individual needs, which change from day to day and over time.
+    We meet you where you are at, and provide a variety of treatment techniques
+    and tools that work for you.
+      "The Journey is the Destination"   ... We are here to walk with you on
+    this path toward Wellness.  We stay present with you and focus on the
+    experience of your journey to rival your end-goal.
+    #+end_quote
+**** TODO use some kind of textured background
+     This might be tied in with [[find stock photo of road or make one]].
+
+     #+begin_quote
+     Make the general background some type of complimenting color, not
+     white?  Maybe a background picture or textured background?
+     #+end_quote
+**** TODO add links to book with Dr. Angela
+**** TODO why see a chiropractor?
+     Add a section about seeing a chiropractor.
+
+     #+begin_quote
+     Journey Chiropractic is here for your everyday aches and pains as well
+     as for your more complicated cases.
+
+     Common Reasons for making an appointment:
+
+     - Neck or Low Back Pain
+     - Sciatica
+     - Herniated Discs
+     - Hip, Knee, Ankle, Shoulder, Elbow Wrist Injury
+     - Sports Injuries
+     - Jaw Pain
+     - Headaches, Migraines
+     - Prenatal & Postnatal Care
+     - Pediatric Care (Post-tongue tie care, colic concerns, developmental
+     concerns)
+     - Posture Advice
+     - Motor Vehicle Accident Injury
+     - Gait
+     - Nutrition Counseling
+
+     Dr. Hoy also sees many patients with complicated cases including patients
+     with pain associated with rare genetic conditions, hypermobility,
+     fibromyalgia, joint disease including RA and osteoarthritis, and
+     spondylolisthesis.
+
+     #+end_quote
 *** Cassandra needs
 **** DONE domain access
      CLOSED: [2019-05-01 Wed 21:14]
