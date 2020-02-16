@@ -69,7 +69,8 @@
 
      I have saved these to the repo as =IMG_####.jpg=. They need to be renamed
      and checked in as well as added to the page.
-**** TODO fix sticky header
+**** DONE fix sticky header
+     CLOSED: [2020-02-15 Sat 17:27]
      Safari requires a vendor prefix to make =position: sticky= work.
 **** TODO like us on Facebook
      https://www.facebook.com/journeychiropracticpdx/

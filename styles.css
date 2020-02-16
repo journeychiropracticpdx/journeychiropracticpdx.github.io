@@ -149,7 +149,6 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   margin: 0;
-  position: sticky;
   top: 0;
 }
 
@@ -168,6 +167,7 @@ body {
 
 .main {
   padding: 1em;
+  overflow-y: scroll;
 }
 
 .page {
@@ -177,7 +177,10 @@ body {
   background-position: right bottom;
   background-repeat: no-repeat;
   color: var(--text-color);
+  display: flex;
+  flex-direction: column;
   font-family: sans-serif;
+  height: 100vh;
   margin: 0;
 }
 
