@@ -98,7 +98,8 @@
      white?  Maybe a background picture or textured background?
      #+end_quote
 **** TODO add links to book with Dr. Angela
-**** TODO why see a chiropractor?
+**** DONE why see a chiropractor?
+     CLOSED: [2020-02-15 Sat 17:26]
      Add a section about seeing a chiropractor.
 
      #+begin_quote

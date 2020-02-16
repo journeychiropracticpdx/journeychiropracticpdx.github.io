@@ -334,6 +334,14 @@ body {
   border-radius: 1rem;
 }
 
+.reasons-list-container {
+  background-color: var(--section-background-color);
+  border-radius: var(--section-radius);
+  color: var(--section-color);
+  max-width: var(--section-width);
+  padding: 1rem;
+}
+
 .services-list-container {
   background-color: var(--section-background-color);
   border-radius: var(--section-radius);
