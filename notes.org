@@ -1,13 +1,13 @@
 * notes
 ** website
 *** Cassandra wants
-**** DONE logo [0/1]
+**** DONE logo [1/1]
      CLOSED: [2019-05-14 Tue 21:42]
-     + [ ] proofs, phase 1/3 [0/3]
-       + [ ] Cassandra wants to see a logo with an S shape from a spine, but as
+     + [X] proofs, phase 1/3 [3/3]
+       + [X] Cassandra wants to see a logo with an S shape from a spine, but as
          a road.
-       + [ ] Use a map to represent a journey.
-       + [ ] Show a path.
+       + [X] Use a map to represent a journey.
+       + [X] Show a path.
 **** DONE colors [3/3]
      CLOSED: [2019-05-14 Tue 21:41]
      + [X] Cassandra wants white/black/purple.
@@ -22,13 +22,15 @@
 **** DONE map
      CLOSED: [2019-05-14 Tue 22:07]
      Make the address something visible.
-**** TODO add logo
+**** DONE add logo
+     CLOSED: [2020-02-15 Sat 23:27]
      It's in my email.
-**** TODO icons [0/3]
+**** TODO icons [1/2]
 
-     I am waiting on svg icons. I cannot open Illustrator files.
+     Inkscape now opens .ai files. I need to slice up some of the layers from
+     the original .ai file into several .svg files, but for now I just have one.
 
-     + [ ] Make an icon out of the logo determined from [[logo]].
+     + [X] Make an icon out of the logo determined from [[logo]].
      + [ ] Make icons for various services Cassandra performs.
 
      From Cassandra:

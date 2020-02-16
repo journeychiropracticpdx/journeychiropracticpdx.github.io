@@ -205,6 +205,19 @@ body {
   text-align: center;
 }
 
+.logo-j-bone {
+  color: var(--header-color);
+  height: 2rem;
+}
+
+.logo-j-bone use {
+  fill: var(--header-color);
+}
+
+.remaining-title {
+  padding-left: 0.10rem;
+}
+
 .subtitle-heading {
   text-align: center;
 }
