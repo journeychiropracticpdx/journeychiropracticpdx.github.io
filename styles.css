@@ -62,7 +62,7 @@ body {
   --section-background-color: var(--abc1);
   --section-color: var(--afc1);
   --section-radius: 0 0 8px 8px;
-  --shadow: 1em 1em 1em -0.5em;
+  --shadow: 1em 1em 1em -1em;
   --button-shadow: 0.25em 0.25em 0.25em 0.1em var(--abc1);
   --services-heading-height: 3rem;
 }
