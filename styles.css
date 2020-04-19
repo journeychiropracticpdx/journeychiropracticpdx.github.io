@@ -146,6 +146,11 @@ body {
   color: var(--section-color);
   border-bottom: 0.1em solid var(--dfc);
   display: flex;
+  /**
+   * Works around a Safari issue where it doesn't respect the height of the
+   * children to compute the height of the parent for flex-direction:row.
+   */
+  flex: 0 0 auto;
   flex-direction: row;
   justify-content: space-evenly;
   margin: 0;
