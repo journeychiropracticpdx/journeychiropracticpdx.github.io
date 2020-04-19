@@ -136,3 +136,7 @@
 **** DONE domain access
      CLOSED: [2019-05-01 Wed 21:14]
 **** TODO high res picture
+**** DONE ssl/https
+     CLOSED: [2020-02-15 Sat 23:53]
+     Earlier this was not doable by github pages, but maybe that's changed
+     recently.
