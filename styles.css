@@ -15,7 +15,7 @@
   --afc1: #340;
   --abc2: #530;
   --afc2: #d85;
-  --tree: url('journey-tree-logo-01.svg');
+  --tree: url('img/journey-tree-logo-01.svg');
 }
 
 .purple-theme {
@@ -25,7 +25,7 @@
   --afc1: #304;
   --abc2: #ec7;
   --afc2: #530;
-  --tree: url('journey-tree-logo-01.svg');
+  --tree: url('img/journey-tree-logo-01.svg');
 }
 
 .purple2-theme {
@@ -35,7 +35,7 @@
   --afc1: #fff;
   --abc2: #643;
   --afc2: #fcb;
-  --tree: url('journey-tree-logo-01.svg');
+  --tree: url('img/journey-tree-logo-01.svg');
 }
 
 .purple3-theme {
@@ -45,7 +45,7 @@
   --afc1: #fff;
   --abc2: #599;
   --afc2: #fff;
-  --tree: url('journey-tree-logo-purple-01.svg');
+  --tree: url('img/journey-tree-logo-purple-01.svg');
 }
 
 body {
