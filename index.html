@@ -18,21 +18,6 @@
      document.querySelector('.theme-switcher').classList.remove('hidden')
    }
 
-   function showService(service) {
-     document.querySelectorAll('.service-description').forEach(e => {
-       e.classList.add('remove')
-     })
-     document.querySelector('.service-' + service).classList.remove('remove')
-
-     document.querySelectorAll('.selected-service-button').forEach(e => {
-       e.classList.remove('selected-service-button')
-       e.classList.add('service-button')
-     })
-     const button = document.querySelector('[data-service="' + service + '"]')
-     button.classList.remove('service-button')
-     button.classList.add('selected-service-button')
-   }
-
    window.onkeyup = (e) => {
      if(e.key.toUpperCase() == 'T') {
        showThemeSwitcher()
@@ -40,7 +25,6 @@
    }
 
    function onload() {
-     showService('chiropractic')
      animateLeaves()
    }
 
@@ -262,70 +246,16 @@
       <section class="section">
         <h2 class="section-heading" id="services">Services</h2>
         <div class="services-list-container">
-          <ul class="services-list">
-            <li>Chiropractic Adjustments</li>
-            <li>Cupping</li>
-            <li>Gua sha</li>
-            <li>Therapeutic Ultrasound</li>
-            <li>Laser/ Low Level Light Therapy</li>
-            <li>Electrical Stimulation (IFC, TENS, Russian Stim)</li>
-            <li>Manual Therapy including with Vibracussor</li>
-            <li>
-              Gentle Adjusting utilizing tools including Activator, Arthrostim,
-              and Blocking
-            </li>
-          </ul>
-          <div class="service-description-container">
-            <div class="services-heading">
-              <button
-                class="service-button"
-                data-service="chiropractic"
-                onclick="showService('chiropractic')"
-              >
-                Chiropractic
-              </button>
-              <div class="service-button-splitter"></div>
-              <button
-                class="service-button"
-                data-service="manual-therapy"
-                onclick="showService('manual-therapy')"
-              >
-                Manual Therapy
-              </button>
-              <div class="service-button-splitter"></div>
-              <button
-                class="service-button"
-                data-service="physical-therapy"
-                onclick="showService('physical-therapy')"
-              >
-                Physical Therapy
-              </button>
-              <div class="service-button-splitter"></div>
-              <button
-                class="service-button"
-                data-service="yoga-instructor"
-                onclick="showService('yoga-instructor')"
-              >
-                Yoga Instruction
-              </button>
-            </div>
-            <div class="service-description service-chiropractic remove">
-              Gentle adjusting utilizing tools including Activator, Arthrostim,
-              and Blocking.
-            </div>
-            <div class="service-description service-manual-therapy remove">
-              Manual therapy utilizing tools including Vibracussor, Cupping, Gua
-              she, Therapeutic Ultrasound, Electrical Stimulation (IFC, TENS,
-              Russian Stim), and Laser/Low Level Light Therapy.
-            </div>
-            <div class="service-description service-physical-therapy remove">
-              Journey Chiropractic works alongside
-              <a href="http://journeytohealthpt.com/">
-                Journey To Health Physical Therapy</a>.
-            </div>
-            <div class="service-description service-yoga-instructor remove">
-              Coming soon!
-            </div>
+          <h3>Chiropractic</h3>
+          <div class="service-description">
+            Gentle adjusting utilizing tools including Activator, Arthrostim,
+            and Blocking.
+          </div>
+          <h3>Manual Therapy</h3>
+          <div class="service-description">
+            Manual therapy utilizing tools including Vibracussor, Cupping, Gua
+            she, Therapeutic Ultrasound, Electrical Stimulation (IFC, TENS,
+            Russian Stim), and Laser/Low Level Light Therapy.
           </div>
         </div>
       </section>

@@ -346,13 +346,16 @@ body {
 }
 
 .practitioner-photo {
+  border-radius: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   /**
    * I can't figure out why there seems to be an arbitrary 2 rem of padding
    * added on the right side of the image. There's more research to do, but
    * this fits the timebox.
    */
   max-width: calc(var(--section-width) - 2rem);
-  border-radius: 1rem;
 }
 
 .reasons-list-container {
@@ -413,11 +416,6 @@ body {
   background-color: var(--section-background-color);
   color: var(--section-color);
   padding: 1rem;
-  border-radius: 0 0 1rem 1rem;
-  border-color: var(--afc1);
-  border-width: 0.1rem;
-  border-style: solid;
-  border-top: none;
 }
 
 .support {
