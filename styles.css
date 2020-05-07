@@ -25,7 +25,6 @@
   --afc1: #304;
   --abc2: #ec7;
   --afc2: #530;
-  --tree: url('img/journey-tree-logo-01.svg');
 }
 
 .purple2-theme {
@@ -35,7 +34,6 @@
   --afc1: #fff;
   --abc2: #643;
   --afc2: #fcb;
-  --tree: url('img/journey-tree-logo-01.svg');
 }
 
 .purple3-theme {
@@ -45,7 +43,6 @@
   --afc1: #fff;
   --abc2: #599;
   --afc2: #fff;
-  --tree: url('img/journey-tree-logo-purple-01.svg');
 }
 
 body {
@@ -58,13 +55,19 @@ body {
   --link-hover-color: var(--afc2);
   --link-visited-color: var(--afc2);
   --text-color: var(--dfc);
-  --section-width: 30rem;
+  --section-width: 60rem;
   --section-background-color: var(--abc1);
   --section-color: var(--afc1);
   --section-radius: 0 0 8px 8px;
   --shadow: 1em 1em 1em -1em;
   --button-shadow: 0.25em 0.25em 0.25em 0.1em var(--abc1);
   --services-heading-height: 3rem;
+}
+
+@media (max-width: 1024px) {
+  body {
+    --section-width: 30rem;
+  }
 }
 
 .availability {
@@ -140,6 +143,26 @@ body {
   border-radius: 4px;
 }
 
+/**
+ * Not sure why this magic padding works but it does... Same for the height.
+ * https://www.ostraining.com/blog/coding/responsive-google-maps/
+ */
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  position: relative;
+  height:0;
+  padding-bottom: 56.25%;
+}
+
+.gmap_canvas iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 .header {
   align-items: center;
   background-color: var(--section-background-color);
@@ -171,16 +194,20 @@ body {
 }
 
 .main {
-  padding: 1em;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   overflow-y: scroll;
+  padding: 1em;
 }
 
 .page {
   background-attachment: fixed;
   background-color: var(--background-color);
-  background-image: var(--tree);
-  background-position: right bottom;
+  background-image: url('img/path-to-bridge-01.png');
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   color: var(--text-color);
   display: flex;
   flex-direction: column;
@@ -291,6 +318,7 @@ body {
   border-radius: 8px;
   box-shadow: var(--shadow);
   max-width: var(--section-width);
+  min-width: var(--section-width);
 }
 
 .section-location {
