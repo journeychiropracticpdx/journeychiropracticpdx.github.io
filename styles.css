@@ -36,6 +36,7 @@
   --afc2: #fcb;
 }
 
+/* The current theme. */
 .purple3-theme {
   --dbc: #fff;
   --dfc: #121212;
@@ -43,6 +44,8 @@
   --afc1: #fff;
   --abc2: #599;
   --afc2: #fff;
+  --critical-fg: #933;
+  --critical-bg: #ec7;
 }
 
 body {
@@ -55,6 +58,8 @@ body {
   --link-hover-color: var(--afc2);
   --link-visited-color: var(--afc2);
   --text-color: var(--dfc);
+  --section-heading-announcement-color: var(--critical-fg);
+  --section-heading-announcement-background-color: var(--critical-bg);
   --section-width: 60rem;
   --section-background-color: var(--abc1);
   --section-color: var(--afc1);
@@ -305,8 +310,18 @@ body {
 }
 
 .section-heading {
-  color: var(--header-color);
+  color: var(--section-header-color);
   background-color: var(--header-background-color);
+  font-size: 1rem;
+  margin-bottom: 0;
+  border-radius: 8px 8px 0 0;
+  max-width: var(--section-width);
+  padding: 1rem 0 0.5rem 2rem;
+}
+
+.section-heading-announcement {
+  color: var(--section-heading-announcement-color);
+  background-color: var(--section-heading-announcement-background-color);
   font-size: 1rem;
   margin-bottom: 0;
   border-radius: 8px 8px 0 0;
@@ -319,6 +334,14 @@ body {
   box-shadow: var(--shadow);
   max-width: var(--section-width);
   min-width: var(--section-width);
+}
+
+.section-body {
+  background-color: var(--section-background-color);
+  border-radius: var(--section-radius);
+  color: var(--section-color);
+  max-width: var(--section-width);
+  padding: 1rem;
 }
 
 .section-location {
