@@ -369,6 +369,10 @@ body {
 .language-list-item {
 }
 
+.list-item {
+  padding-bottom: 0.25rem;
+}
+
 .location {
   background-color: var(--section-background-color);
   border-radius: var(--section-radius);
