@@ -1,36 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Journey Chiropractic</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
   </head>
-
-  <script>
-   function useTheme(theme) {
-     document.body.classList.remove('green-theme')
-     document.body.classList.remove('purple-theme')
-     document.body.classList.remove('purple2-theme')
-     document.body.classList.remove('purple3-theme')
-     document.body.classList.add(theme + '-theme')
-   }
-
-   function showThemeSwitcher() {
-     document.querySelector('.theme-switcher').classList.remove('hidden')
-   }
-
-   window.onkeyup = (e) => {
-     if(e.key.toUpperCase() == 'T') {
-       showThemeSwitcher()
-     }
-   }
-
-   function onload() {
-     animateLeaves()
-   }
-
-  </script>
-
-  <script src="leaves.js"></script>
 
   <body class="page purple3-theme" onload="onload()">
     <header class="header">
@@ -220,7 +194,7 @@ src="https://maps.google.com/maps?q=10445+SW+Canyon+Rd+%23101,+Beaverton,+OR+970
             Journey Chiropractic is here for your everyday aches and pains as
             well as for your more complicated cases.
           </p>
-          <p>
+          <div>
             Common Reasons for making an appointment:
             <ul>
               <li class="list-item">
@@ -264,7 +238,7 @@ src="https://maps.google.com/maps?q=10445+SW+Canyon+Rd+%23101,+Beaverton,+OR+970
                 Nutrition Counseling
               </li>
             </ul>
-          </p>
+          </div>
           <p>
             Dr. Hoy also sees many patients with complicated cases including
             patients with pain associated with rare genetic conditions,
@@ -298,15 +272,19 @@ src="https://maps.google.com/maps?q=10445+SW+Canyon+Rd+%23101,+Beaverton,+OR+970
           <p class="practitioner-description">
             Dr. Cassandra Hoy incorporates a gentle approach to your treatment,
             pulling advanced trainings in intuitive adjustment techniques,
-            Sacro-Occipital Technique, Webster Technique, functional medicine and
-            nutrition, pediatrics and prenatal care. She is excited to work
+            Sacro-Occipital Technique, Webster Technique, functional medicine
+            and nutrition, pediatrics and prenatal care. She is excited to work
             collaboratively with your healthcare team to support conditions
             including accidents and trauma, TMJ and headaches, pregnancy and
             postpartum recovery, everyday aches and pains, as well as complex
-            conditions. In her free time Dr. Hoy enjoys playing in the garden and
-            on her bike as well as finding new uses for old things.
+            conditions. In her free time Dr. Hoy enjoys playing in the garden
+            and on her bike as well as finding new uses for old things.
           </p>
-          <img class="practitioner-photo" src="./img/choy-picture-1-cropped.jpg" />
+          <img
+            alt="Dr. Hoy portrait"
+            class="practitioner-photo"
+            src="./img/choy-picture-1-cropped.jpg"
+            />
         </section>
       </section>
       <section class="section">
@@ -331,12 +309,39 @@ src="https://maps.google.com/maps?q=10445+SW+Canyon+Rd+%23101,+Beaverton,+OR+970
         <section class="support">
           <p>
             Journey Chiropractic is a member of JASO (Japan-America Society of
-            Oregon) and OAME (Oregon Association of Minority Entreprenuers).
+            Oregon) and OAME (Oregon Association of Minority Entrepreneurs).
           </p>
-          <img class="support-logo" src="./img/jaso-01.jpg">
-          <img class="support-logo" src="./img/oame-01.jpg">
+          <img alt="JASO logo" class="support-logo" src="./img/jaso-01.jpg">
+          <img alt="OAME logo" class="support-logo" src="./img/oame-01.jpg">
         </section>
       </section>
     </main>
+    <script>
+      function useTheme(theme) {
+        document.body.classList.remove('green-theme')
+        document.body.classList.remove('purple-theme')
+        document.body.classList.remove('purple2-theme')
+        document.body.classList.remove('purple3-theme')
+        document.body.classList.add(theme + '-theme')
+      }
+
+      function showThemeSwitcher() {
+        document.querySelector('.theme-switcher').classList.remove('hidden')
+      }
+
+      window.onkeyup = (e) => {
+        if(e.key.toUpperCase() == 'T') {
+          showThemeSwitcher()
+        }
+      }
+
+      function onload() {
+        animateLeaves()
+      }
+
+    </script>
+
+    <script src="leaves.js"></script>
+
   </body>
 </html>
